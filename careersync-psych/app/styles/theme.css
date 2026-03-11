@@ -1,0 +1,156 @@
+/* Default light mode - Warm & Lime */
+:root,
+[data-theme="light"] {
+    --main-bg: #FCFBF7;       /* Warm off-white */
+    --card-bg: #FFFFFF;
+    --card-border: #E5E7EB;
+    --text-main: #1A1C16;     /* Deep olive-black */
+    --text-sub: #525252;
+
+    /* primary button - Lime Green */
+    --primary-btn-bg: #F7FEE7;
+    --primary-btn-border: #84CC16;
+    --primary-btn-txt: #3F6212;
+
+    --primary-hover-bg: #ECFCCB;
+    --primary-hover-border: #65A30D;
+    --primary-hover-txt: #365314;
+
+    --primary-active-bg: #D9F99D;
+    --primary-active-border: #4D7C0F;
+    --primary-active-txt: #1A2E05;
+
+    /* danger button - Warm Coral */
+    --danger-btn-bg: #FFF7ED;
+    --danger-btn-border: #FB923C;
+    --danger-btn-txt: #9A3412;
+
+    --danger-hover-bg: #FFEDD5;
+    --danger-hover-border: #F97316;
+    --danger-hover-txt: #7C2D12;
+
+    --danger-active-bg: #FED7AA;
+    --danger-active-border: #EA580C;
+    --danger-active-txt: #431407;
+
+    /* selection radio */
+    --select-bg: #FFFFFF;
+    --select-border: #E5E7EB;
+    --select-txt: #525252;
+
+    --select-hover-bg: #F9FAFB;
+    --select-hover-border: #D1D5DB;
+    --select-hover-txt: #374151;
+
+    --selected-bg: #F7FEE7;
+    --selected-border: #84CC16;
+    --selected-txt: #3F6212;
+
+    --selected-hover-bg: #ECFCCB;
+    --selected-hover-border: #65A30D;
+    --selected-hover-txt: #365314;
+
+    /* secondary button */
+    --secondary-bg: #F9FAFB;
+    --secondary-border: #D1D5DB;
+    --secondary-txt: #4B5563;
+
+    --secondary-hover-bg: #F3F4F6;
+    --secondary-hover-border: #9CA3AF;
+    --secondary-hover-txt: #1F2937;
+
+    --secondary-active-bg: #E5E7EB;
+    --secondary-active-border: #6B7280;
+    --secondary-active-txt: #111827;
+
+    /* checkbox */
+    --box-bg: #FFFFFF;
+    --box-border: #D1D5DB;
+
+    --box-hover-bg: #F7FEE7;
+    --box-hover-border: #A3E635;
+
+    --box-checked-bg: #84CC16;
+    --box-checked-border: #65A30D;
+
+    /* theme toggle */
+    --toggle-bg: #E5E7EB;
+}
+
+/* Dark mode — deep forest / neon lime */
+[data-theme="dark"] {
+    --main-bg: #0C0D08;       /* Deep warm black */
+    --card-bg: #141611;       /* Dark olive-charcoal */
+    --card-border: #262B21;
+    --text-main: #F7FEE7;
+    --text-sub: #A1A1AA;
+
+    /* primary button */
+    --primary-btn-bg: #1A2E05;
+    --primary-btn-border: #84CC16;
+    --primary-btn-txt: #BEF264;
+
+    --primary-hover-bg: #365314;
+    --primary-hover-border: #A3E635;
+    --primary-hover-txt: #FFFFFF;
+
+    --primary-active-bg: #1A2E05;
+    --primary-active-border: #65A30D;
+    --primary-active-txt: #D9F99D;
+
+    /* danger button */
+    --danger-btn-bg: #431407;
+    --danger-btn-border: #F97316;
+    --danger-btn-txt: #FFEDD5;
+
+    --danger-hover-bg: #7C2D12;
+    --danger-hover-border: #FB923C;
+    --danger-hover-txt: #FFFFFF;
+
+    --danger-active-bg: #431407;
+    --danger-active-border: #EA580C;
+    --danger-active-txt: #FFCC80;
+
+    /* selection radio */
+    --select-bg: #141611;
+    --select-border: #262B21;
+    --select-txt: #A1A1AA;
+
+    --select-hover-bg: #1A1C16;
+    --select-hover-border: #3F4438;
+    --select-hover-txt: #F7FEE7;
+
+    --selected-bg: #1A2E05;
+    --selected-border: #84CC16;
+    --selected-txt: #FFFFFF;
+
+    --selected-hover-bg: #365314;
+    --selected-hover-border: #A3E635;
+    --selected-hover-txt: #FFFFFF;
+    
+    /* secondary button */
+    --secondary-bg: #1A1C16;
+    --secondary-border: #3F4438;
+    --secondary-txt: #A1A1AA;
+
+    --secondary-hover-bg: #262B21;
+    --secondary-hover-border: #525252;
+    --secondary-hover-txt: #F9FAFB;
+
+    --secondary-active-bg: #0C0D08;
+    --secondary-active-border: #262B21;
+    --secondary-active-txt: #71717A;
+
+    /* checkbox */
+    --box-bg: #1A1C16;
+    --box-border: #3F4438;
+
+    --box-hover-bg: #1A2E05;
+    --box-hover-border: #84CC16;
+
+    --box-checked-bg: #84CC16;
+    --box-checked-border: #BEF264;
+
+    /* theme toggle */
+    --toggle-bg: #27272A;
+}

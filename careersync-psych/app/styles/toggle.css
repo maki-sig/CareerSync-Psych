@@ -1,0 +1,31 @@
+/* ── Toggle row ─────────────────────────────────────────── */
+.program-toggle-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 8px;
+}
+
+@media (min-width: 768px) {
+    .program-toggle-div {
+        padding: 10px;
+    }
+}
+
+.program-toggle-div svg {
+    cursor: pointer;           /* mobile */
+    height: 100%;
+}
+
+@media (min-width: 768px) {
+    .program-toggle-div svg {
+        width: 24px;        /* original / desktop */
+        height: 24px;
+    }
+}
+
+.program-toggle-div svg path {
+    color: var(--toggle-bg);
+    fill: currentColor;
+}
