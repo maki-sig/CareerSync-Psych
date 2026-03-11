@@ -65,10 +65,13 @@
     }
 }
 
-CSicon {
-    width: 24px;
-    height: 24px;
-    aspect-ratio: 1/1;
+Psi, .program-card svg { 
+    height: 18px;
+    width: 18px;
+}
+
+.program-card a {
+    text-decoration: none;
 }
 
 /* ── Card button ────────────────────────────────────────── */

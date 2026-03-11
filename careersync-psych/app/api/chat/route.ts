@@ -9,10 +9,10 @@ export async function POST(req: Request) {
 
     const { text } = await generateText({
       model: google('gemini-2.5-flash'),  // ← model name
-      system: `Act as an IT and CS career advisor. When given a student profile, respond ONLY with a valid JSON object (no markdown, no prose).
+      system: `Act as a Psychology career advisor. When given a student profile, respond ONLY with a valid JSON object (no markdown, no prose).
 JSON Structure:
 {
-  "role": "Specific job title",
+  "role": "a/an + Specific job title",
   "summary": "1-sentence role description",
   "fitReason": "1-sentence connecting profile to role",
   "confidence": 0-100

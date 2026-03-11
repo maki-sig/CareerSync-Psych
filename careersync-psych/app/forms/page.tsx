@@ -6,32 +6,19 @@ import Header from "../components/header"
 import "../styles/forms.css"
 
 type WorkStyle = "Collaborative" | "Independent" | null
-type SoftSkill = "Logical and systematic thinker" | "Efficiency and performance driven" | "Fast-acting and highly adaptive" | "Clear and effective communicator" | null
+type SoftSkill = "Empathetic and emotionally attuned" | "Analytical and research-driven" | "Patient and deeply observant" | "Clear and effective communicator" | null
 
-const SUBJECTS_IT = [
-    "Networking & Infrastructure",
-    "Cybersecurity",
-    "Database Administration",
-    "Systems Administration",
-    "Web Development",
-    "Cloud Computing",
-    "IT Project Management",
-    "Technical Support",
-    "Network Security",
-    "IT Service Management",
-]
-
-const SUBJECTS_CS = [
-    "Data Structures & Algorithms",
-    "Operating Systems",
-    "Software Engineering",
-    "Artificial Intelligence",
-    "Machine Learning",
-    "Computer Architecture",
-    "Programming Languages",
-    "Discrete Mathematics",
-    "Computer Graphics",
-    "Theory of Computation",
+const SUBJECTS = [
+    "Abnormal Psychology",
+    "Developmental Psychology",
+    "Cognitive Psychology",
+    "Social Psychology",
+    "Clinical & Counseling",
+    "Neuropsychology",
+    "Behavioral Analysis",
+    "Research Methods & Statistics",
+    "Industrial-Organizational Psychology",
+    "Health & Wellness Psychology",
 ]
 
 const HOBBIES = ["Puzzles", "Visual arts", "Fitness", "Music", "Reading", "Outdoor exploration", "Socializing", "Self-reflecting", "Craft & building", "Collecting data & trends"]
@@ -47,22 +34,21 @@ function buildPrompt(data: {
 
     return `
 I'm a ${program} student that completed a career profile survey. Here are my responses:
-Program: ${program === "IT" ? "Information Technology" : "Computer Science"}
-Preffered work style: ${workStyle ?? "Not specified"}
-Technical subjects they enjoyed or excelled in:
+Program: ${program}
+Preferred work style: ${workStyle ?? "Not specified"}
+Psychology subjects they enjoyed or excelled in:
 ${subjects.length > 0 ? subjects.map(s => `- ${s}`).join("\n") : "- None selected"}
 Interpersonal strength: ${softSkill ?? "Not specified"}
-Pesonal hobbies & interests:
+Personal hobbies & interests:
 ${hobbies.length > 0 ? hobbies.map(h => `- ${h}`).join("\n") : "- None selected"}
-Based on this profile, recommend the single best-fit tech career for me.
+Based on this profile, recommend the single best-fit Psychology career for me.
     `.trim()
 }
 
 export default function Forms() {
     const router = useRouter()
     const searchParams = useSearchParams()
-    const program = searchParams.get("program") === "IT" ? "IT" : "CS"
-    const SUBJECTS = program === "IT" ? SUBJECTS_IT : SUBJECTS_CS
+    const program = searchParams.get("program") ?? "Psych"
 
     const [page, setPage] = useState<1 | 2 | 3 | 4>(1)
     const [workStyle, setWorkStyle] = useState<WorkStyle>(null)
@@ -110,7 +96,7 @@ export default function Forms() {
 
         const formData = { program, workStyle, subjects, softSkill, hobbies }
         const prompt = buildPrompt(formData)
-        // console.log(prompt)
+
         try {
             const res = await fetch("/api/chat", {
                 method: "POST",
@@ -130,7 +116,7 @@ export default function Forms() {
 
             document.cookie = "careersync_submitted=true; path=/"
             router.push("/results")
-            
+
         } catch (err) {
             console.error("Failed to fetch career recommendations:", err)
             alert("Something went wrong generating your results. Please try again later.")
@@ -174,7 +160,7 @@ export default function Forms() {
                     <div className="subjects-section">
                         <h1 className="category-txt">Core Domains</h1>
                         <div className="subjects-card">
-                            <span className="question-txt">Which technical subjects have you mastered or enjoyed most?</span>
+                            <span className="question-txt">Which Psychology subjects have you mastered or enjoyed most?</span>
                             <span className="caption-txt" style={{ color: validationMsg ? "var(--danger-btn-border)" : undefined }}>
                                 Select the areas where you feel most confident or find the highest level of interest
                             </span>
@@ -203,10 +189,10 @@ export default function Forms() {
                         <div className="softskills-card">
                             <span className="question-txt">What is your primary interpersonal strength?</span>
                             <span className="caption-txt" style={{ color: validationMsg ? "var(--danger-btn-border)" : undefined }}>
-                                Choose the one strength that most defines your contribution to a technical team
+                                Choose the one strength that most defines your contribution to a team or practice
                             </span>
                             <div className="softskills-btn-grp">
-                                {(["Logical and systematic thinker", "Efficiency and performance driven", "Fast-acting and highly adaptive", "Clear and effective communicator"] as SoftSkill[]).map(option => (
+                                {(["Empathetic and emotionally attuned", "Analytical and research-driven", "Patient and deeply observant", "Clear and effective communicator"] as SoftSkill[]).map(option => (
                                     <label key={option!} className={`option-txt softskill-option ${softSkill === option ? "selected" : ""}`}
                                         onClick={() => setValidationMsg(null)}>
                                         <input type="radio" name="softskill" value={option!} checked={softSkill === option} onChange={() => setSoftSkill(option)} />

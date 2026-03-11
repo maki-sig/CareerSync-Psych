@@ -5,7 +5,7 @@ export default function proxy(request: NextRequest) {
 
     if (pathname === "/forms") {
         const program = searchParams.get("program")
-        if (program !== "CS" && program !== "IT") {
+        if (program !== "Psych") {
             return NextResponse.redirect(new URL("/", request.url))
         }
     }
