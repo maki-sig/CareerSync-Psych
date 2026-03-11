@@ -1,6 +1,6 @@
-/* Refined Palette:
-   Light: Crisp Bone & Airy Cerulean
-   Dark: Deep Ink & Radiant Azure
+/* THEME: POLARIS
+   Light Mode: Unified Selection & Primary
+   Dark Mode: Independent Azure Primary & Cyan Selection
 */
 
 :root,
@@ -11,32 +11,6 @@
     --card-border: #E2E8F0;
     --text-main: #0F172A;     
     --text-sub: #64748B;
-
-    /* Primary - Pastel Blue */
-    --primary-btn-bg: #EFF8FF; 
-    --primary-btn-border: #BAD9F5; 
-    --primary-btn-txt: #1477CC;
-
-    --primary-hover-bg: #D8EFFE;
-    --primary-hover-border: #8AC0EE;
-    --primary-hover-txt: #0D60AA;
-
-    --primary-active-bg: #B8DFFB;
-    --primary-active-border: #55A0E0;
-    --primary-active-txt: #084D8A;
-
-    /* Danger - Pastel Rose */
-    --danger-btn-bg: #FFF1F2;
-    --danger-btn-border: #FECDD3;
-    --danger-btn-txt: #E11D48;
-
-    --danger-hover-bg: #FFE4E6;
-    --danger-hover-border: #FDA4AF;
-    --danger-hover-txt: #BE123C;
-
-    --danger-active-bg: #FECDD3;
-    --danger-active-border: #FB7185;
-    --danger-active-txt: #9F1239;
 
     /* Selection Radio/Cards */
     --select-bg: #FFFFFF;
@@ -54,6 +28,32 @@
     --selected-hover-bg: #D8EFFE;
     --selected-hover-border: #1477CC;
     --selected-hover-txt: #084D8A;
+
+    /* Primary Button - Inheriting from Selected (Light Mode Only) */
+    --primary-btn-bg: var(--selected-bg); 
+    --primary-btn-border: var(--selected-border); 
+    --primary-btn-txt: var(--selected-txt);
+
+    --primary-hover-bg: var(--selected-hover-bg);
+    --primary-hover-border: var(--selected-hover-border);
+    --primary-hover-txt: var(--selected-hover-txt);
+
+    --primary-active-bg: #B8DFFB;
+    --primary-active-border: #55A0E0;
+    --primary-active-txt: #084D8A;
+
+    /* Danger - Pastel Rose */
+    --danger-btn-bg: #FFF1F2;
+    --danger-btn-border: #FECDD3;
+    --danger-btn-txt: #E11D48;
+
+    --danger-hover-bg: #FFE4E6;
+    --danger-hover-border: #FDA4AF;
+    --danger-hover-txt: #BE123C;
+
+    --danger-active-bg: #FECDD3;
+    --danger-active-border: #FB7185;
+    --danger-active-txt: #9F1239;
 
     /* Secondary - Neutrals */
     --secondary-bg: #FFFFFF;
@@ -86,9 +86,9 @@
     --card-bg: #11141D;       
     --card-border: #1A2030;   
     --text-main: #F8FAFC;     
-    --text-sub: #6A6A78;
+    --text-sub: #8A9AAA;
 
-    /* Primary - True Azure Blue */
+    /* Primary - True Azure Blue (Independent) */
     --primary-btn-bg: #052040; 
     --primary-btn-border: #1477CC; 
     --primary-btn-txt: #C8E6FA;
@@ -114,7 +114,7 @@
     --danger-active-border: #F43F5E;
     --danger-active-txt: #FFFFFF;
 
-    /* Selection Radio/Cards */
+    /* Selection Radio/Cards (Independent Cyan Style) */
     --select-bg: #11141D;
     --select-border: #1A2030;
     --select-txt: #8A9AAA;
