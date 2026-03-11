@@ -21,8 +21,8 @@ export default function Landing() {
                         <Psi />
                         Psychology
                     </button>
-                    <a href="https://github.com/maki-sig" target="blank">
-                        <span className="caption-txt">HelloKinaban @ github</span>
+                    <a href="https://www.tiktok.com/@hellokinaban" target="blank">
+                        <span className="caption-txt">HelloKinaban @ tiktok && github || Marc Botis</span>
                     </a> 
                 </div>
             </section>
