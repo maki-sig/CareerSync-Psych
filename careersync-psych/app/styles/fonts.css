@@ -1,0 +1,90 @@
+/* ── Title ──────────────────────────────────────────────── */
+.title-txt {
+    margin: 0;
+    color: var(--text-main);
+    font-family: var(--space-grotesk);
+    font-weight: 700;
+    font-size: 24px;        /* mobile */
+}
+
+@media (min-width: 480px) {
+    .title-txt { font-size: 28px; }
+}
+
+@media (min-width: 768px) {
+    .title-txt { font-size: 32px; }
+}
+
+@media (min-width: 1024px) {
+    .title-txt { font-size: 36px; } /* original / desktop */
+}
+
+/* ── Category ────────────────────────────────────────────── */
+.category-txt {
+    margin: 0;
+    color: var(--text-main);
+    font-family: var(--space-grotesk);
+    font-weight: 500;
+    font-size: 18px;        /* mobile */
+}
+
+@media (min-width: 480px) {
+    .category-txt { font-size: 20px; }
+}
+
+@media (min-width: 1024px) {
+    .category-txt { font-size: 24px; } /* original / desktop */
+}
+
+/* ── Question ────────────────────────────────────────────── */
+.question-txt {
+    margin: 0;
+    color: var(--text-main);
+    font-family: var(--plus-jakarta);
+    font-weight: 600;
+    font-size: 15px;        /* mobile */
+}
+
+@media (min-width: 480px) {
+    .question-txt { font-size: 16px; }
+}
+
+@media (min-width: 1024px) {
+    .question-txt { font-size: 18px; } /* original / desktop */
+}
+
+/* ── Button text ─────────────────────────────────────────── */
+/* 14px is already compact — hold at 13px on small screens   */
+.btn-txt {
+    margin: 0;
+    font-family: var(--plus-jakarta);
+    font-weight: 600;
+    font-size: 13px;        /* mobile */
+}
+
+@media (min-width: 1024px) {
+    .btn-txt { font-size: 14px; } /* original / desktop */
+}
+
+/* ── Option ──────────────────────────────────────────────── */
+.option-txt {
+    margin: 0;
+    color: var(--text-sub);
+    font-family: var(--plus-jakarta);
+    font-weight: 400;
+    font-size: 13px;        /* mobile */
+}
+
+@media (min-width: 1024px) {
+    .option-txt { font-size: 14px; } /* original / desktop */
+}
+
+/* ── Caption ─────────────────────────────────────────────── */
+/* 12px is the practical minimum for legibility — don't go lower */
+.caption-txt {
+    margin: 0;
+    color: var(--text-sub);
+    font-family: var(--space-grotesk);
+    font-weight: 400;
+    font-size: 12px;        /* mobile — same as desktop, already minimal */
+}

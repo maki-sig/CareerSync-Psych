@@ -1,0 +1,174 @@
+/* ── SVG icon ───────────────────────────────────────────── */
+.results-section svg {
+    height: 24px;
+    width: 24px;
+}
+
+.results-section svg path {
+    color: var(--primary-btn-bg);
+    fill: currentColor;
+    stroke: var(--primary-btn-border);
+    stroke-width: 1px;
+    vector-effect: non-scaling-stroke;
+}
+
+/* ── Section ────────────────────────────────────────────── */
+.results-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    align-self: stretch;
+    gap: 20px;
+    padding: 0 16px 32px;
+    justify-content: center;
+}
+
+.results-card .caption-txt { 
+    color: var(--primary-btn-border) !important; 
+    width: 100%;
+    text-align: center;
+}
+
+.results-section .title-txt {
+    text-align: center;
+}
+
+@media (min-width: 480px) {
+    .results-section {
+        gap: 28px;
+        padding: 0 32px 40px; 
+    }
+}
+
+@media (min-width: 768px) {
+    .results-section {
+        gap: 35px;
+        padding: 0 20px 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .results-section {
+        padding: 0 100px 50px;
+    }
+}
+
+/* ── Card ───────────────────────────────────────────────── */
+.results-card {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+    max-width: 450px;
+}
+
+@media (min-width: 480px) {
+    .results-card {
+        padding: 32px;
+        gap: 22px;
+    }
+}
+
+@media (min-width: 768px) {
+    .results-card {
+        padding: 40px;
+        gap: 25px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .results-card {
+        padding: 50px;
+    }
+}
+
+/* ── Submit button ──────────────────────────────────────── */
+.submit-btn {
+    display: flex;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: var(--primary-btn-bg);
+    border: 1px solid var(--primary-btn-border);
+    color: var(--primary-btn-txt);
+    transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+    -webkit-tap-highlight-color: transparent;
+}
+
+@media (min-width: 480px) {
+    .submit-btn {
+        padding: 9px 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .submit-btn {
+        padding: 10px 25px;
+    }
+}
+
+.submit-btn:hover {
+    background-color: var(--primary-hover-bg);
+    border-color: var(--primary-hover-border);
+    color: var(--primary-hover-txt);
+}
+
+.submit-btn:active {
+    background-color: var(--primary-active-bg);
+    border-color: var(--primary-active-border);
+    color: var(--primary-active-txt);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .submit-btn {
+        transition: none;
+    }
+}
+
+/* ── Loading bar ────────────────────────────────────────── */
+.loading-grp {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 100%;
+    max-width: 450px;
+}
+
+.loading-label {
+    text-align: center;
+}
+
+.loading-bar-track {
+    width: 100%;
+    height: 8px;
+    background-color: var(--primary-btn-bg);
+    overflow: hidden;
+}
+
+.loading-bar-fill {
+    height: 100%;
+    width: 30%;
+    background-color: var(--primary-btn-border);
+    animation: loading-sweep 0.9s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+@keyframes loading-sweep {
+    0%   { transform: translateX(-200%); }
+    100% { transform: translateX(400%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .loading-bar-fill {
+        animation: none;
+        width: 100%;
+        opacity: 0.4;
+    }
+}
