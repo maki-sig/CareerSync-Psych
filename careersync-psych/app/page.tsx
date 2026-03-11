@@ -12,7 +12,7 @@ export default function Landing() {
         <>
             <ThemeToggle />
             <section className="program-section">
-                <h1 className="title-txt">CareerSync</h1>
+                <h1 className="title-txt">CareerSync - ver. Psych</h1>
                 <span className="desc option-txt">This is a decision support form based web app that will align Psychology students to related industry careers.<br />Powered by Gemini.</span>
 
                 <div className="program-card">
