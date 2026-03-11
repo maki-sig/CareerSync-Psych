@@ -1,156 +1,157 @@
-/* Default light mode - Pastel Blue */
+/* Refined Palette:
+   Light: Crisp Bone & Airy Cerulean
+   Dark: Deep Ink & Radiant Azure
+*/
+
 :root,
 [data-theme="light"] {
-    --main-bg: #F5F9FF;       
+    /* Base Surface */
+    --main-bg: #F8FAFC;       
     --card-bg: #FFFFFF;
-    --card-border: #DDEAF8;
+    --card-border: #E2E8F0;
     --text-main: #0F172A;     
-    --text-sub: #7A92A8;
+    --text-sub: #64748B;
 
-    /* primary button - Pastel Blue */
-    --primary-btn-bg: #EAF4FF; 
-    --primary-btn-border: #7AB8E8; 
-    --primary-btn-txt: #2D7AB5;
+    /* Primary - Pastel Blue */
+    --primary-btn-bg: #EFF8FF; 
+    --primary-btn-border: #BAD9F5; 
+    --primary-btn-txt: #1477CC;
 
-    --primary-hover-bg: #D4E9FA;
-    --primary-hover-border: #5AA0D4;
-    --primary-hover-txt: #1A5E8F;
+    --primary-hover-bg: #D8EFFE;
+    --primary-hover-border: #8AC0EE;
+    --primary-hover-txt: #0D60AA;
 
-    --primary-active-bg: #B8D8F5;
-    --primary-active-border: #3A86C0;
-    --primary-active-txt: #0F4570;
+    --primary-active-bg: #B8DFFB;
+    --primary-active-border: #55A0E0;
+    --primary-active-txt: #084D8A;
 
-    /* danger button - Pastel Rose */
-    --danger-btn-bg: #FFF4F5;
-    --danger-btn-border: #E8909A;
-    --danger-btn-txt: #B54455;
+    /* Danger - Pastel Rose */
+    --danger-btn-bg: #FFF1F2;
+    --danger-btn-border: #FECDD3;
+    --danger-btn-txt: #E11D48;
 
-    --danger-hover-bg: #FFE6E9;
-    --danger-hover-border: #D4687A;
-    --danger-hover-txt: #8F2D3C;
+    --danger-hover-bg: #FFE4E6;
+    --danger-hover-border: #FDA4AF;
+    --danger-hover-txt: #BE123C;
 
-    --danger-active-bg: #FAD0D6;
-    --danger-active-border: #B54455;
-    --danger-active-txt: #6B1E2A;
+    --danger-active-bg: #FECDD3;
+    --danger-active-border: #FB7185;
+    --danger-active-txt: #9F1239;
 
-    /* selection radio */
+    /* Selection Radio/Cards */
     --select-bg: #FFFFFF;
-    --select-border: #DDEAF8;
-    --select-txt: #5A7A90;
+    --select-border: #E2E8F0;
+    --select-txt: #475569;
 
-    --select-hover-bg: #F0F7FF;
-    --select-hover-border: #B0CDE8;
-    --select-hover-txt: #1E3A50;
+    --select-hover-bg: #F8FAFC;
+    --select-hover-border: #CBD5E1;
+    --select-hover-txt: #1E293B;
 
-    --selected-bg: #EAF4FF;
-    --selected-border: #7AB8E8;
-    --selected-txt: #2D7AB5;
+    --selected-bg: #EFF8FF;
+    --selected-border: #2E8FE0;
+    --selected-txt: #1068B8;
 
-    --selected-hover-bg: #D4E9FA;
-    --selected-hover-border: #5AA0D4;
-    --selected-hover-txt: #1A5E8F;
+    --selected-hover-bg: #D8EFFE;
+    --selected-hover-border: #1477CC;
+    --selected-hover-txt: #084D8A;
 
-    /* secondary button - Soft Slate */
-    --secondary-bg: #F0F5FA;
-    --secondary-border: #C8D8E8;
-    --secondary-txt: #5A7A90;
+    /* Secondary - Neutrals */
+    --secondary-bg: #FFFFFF;
+    --secondary-border: #E2E8F0;
+    --secondary-txt: #475569;
 
-    --secondary-hover-bg: #E2EDF8;
-    --secondary-hover-border: #A0B8CC;
-    --secondary-hover-txt: #1E3A50;
+    --secondary-hover-bg: #F1F5F9;
+    --secondary-hover-border: #CBD5E1;
+    --secondary-hover-txt: #0F172A;
 
-    --secondary-active-bg: #C8D8E8;
-    --secondary-active-border: #7A98B0;
-    --secondary-active-txt: #0F2030;
+    --secondary-active-bg: #E2E8F0;
+    --secondary-active-border: #94A3B8;
+    --secondary-active-txt: #0F172A;
 
-    /* checkbox */
+    /* Checkbox */
     --box-bg: #FFFFFF;
-    --box-border: #C8D8E8;
+    --box-border: #CBD5E1;
+    --box-hover-bg: #EFF8FF;
+    --box-hover-border: #2E8FE0;
+    --box-checked-bg: #2E8FE0;
+    --box-checked-border: #1477CC;
 
-    --box-hover-bg: #EAF4FF;
-    --box-hover-border: #7AB8E8;
-
-    --box-checked-bg: #7AB8E8;
-    --box-checked-border: #5AA0D4;
-
-    /* theme toggle */
-    --toggle-bg: #DDEAF8;
+    /* Theme Toggle */
+    --toggle-bg: #E2E8F0;
 }
 
-/* Dark mode — Soft Obsidian & Pastel Blue */
 [data-theme="dark"] {
-    --main-bg: #020408;       
-    --card-bg: #0A0C12;       
-    --card-border: #161B26;   
-    --text-main: #E8F2FA;     
-    --text-sub: #6A88A0;
+    /* Base Surface - Deeper Obsidian */
+    --main-bg: #0B0E14;       
+    --card-bg: #11141D;       
+    --card-border: #1A2030;   
+    --text-main: #F8FAFC;     
+    --text-sub: #6A6A78;
 
-    /* primary button - Muted Pastel Blue */
-    --primary-btn-bg: #0A1E38; 
-    --primary-btn-border: #5A9FD4; 
-    --primary-btn-txt: #B8DCFA;
+    /* Primary - True Azure Blue */
+    --primary-btn-bg: #052040; 
+    --primary-btn-border: #1477CC; 
+    --primary-btn-txt: #C8E6FA;
 
-    --primary-hover-bg: #0F2A4A;
-    --primary-hover-border: #7AB8E8;
-    --primary-hover-txt: #E0F0FF;
+    --primary-hover-bg: #083060;
+    --primary-hover-border: #2E8FE0;
+    --primary-hover-txt: #E8F4FF;
 
-    --primary-active-bg: #061428;
-    --primary-active-border: #3A86C0;
-    --primary-active-txt: #90C8F0;
+    --primary-active-bg: #031428;
+    --primary-active-border: #0D60AA;
+    --primary-active-txt: #9ACEF5;
 
-    /* danger button - Muted Pastel Rose */
-    --danger-btn-bg: #200A0E;
-    --danger-btn-border: #C07080;
-    --danger-btn-txt: #F0C0C8;
+    /* Danger - Muted Rose */
+    --danger-btn-bg: #450A0A;
+    --danger-btn-border: #991B1B;
+    --danger-btn-txt: #FECDD3;
 
-    --danger-hover-bg: #2E0F15;
-    --danger-hover-border: #D48898;
-    --danger-hover-txt: #FAD8E0;
+    --danger-hover-bg: #7F1D1D;
+    --danger-hover-border: #B91C1C;
+    --danger-hover-txt: #FFF1F2;
 
-    --danger-active-bg: #160608;
-    --danger-active-border: #A05060;
-    --danger-active-txt: #E0A0B0;
+    --danger-active-bg: #991B1B;
+    --danger-active-border: #F43F5E;
+    --danger-active-txt: #FFFFFF;
 
-    /* selection radio */
-    --select-bg: #0A0C12;
-    --select-border: #161B26;
-    --select-txt: #6A88A0;
+    /* Selection Radio/Cards */
+    --select-bg: #11141D;
+    --select-border: #1A2030;
+    --select-txt: #8A9AAA;
 
-    --select-hover-bg: #0A0F1E;
-    --select-hover-border: #1A2A3A;
-    --select-hover-txt: #E8F2FA;
+    --select-hover-bg: #161C28;
+    --select-hover-border: #283848;
+    --select-hover-txt: #F1F5F9;
 
-    --selected-bg: #0A1E38;
-    --selected-border: #5A9FD4;
-    --selected-txt: #E0F0FF;
+    --selected-bg: #052040;
+    --selected-border: #2E8FE0;
+    --selected-txt: #C8E6FA;
 
-    --selected-hover-bg: #0F2A4A;
-    --selected-hover-border: #7AB8E8;
+    --selected-hover-bg: #083060;
+    --selected-hover-border: #50A8F0;
     --selected-hover-txt: #FFFFFF;
     
-    /* secondary button - Stealth Mode */
-    --secondary-bg: #0A0C12;        
-    --secondary-border: #161B26;    
-    --secondary-txt: #6A88A0;       
+    /* Secondary - Muted Slate */
+    --secondary-bg: #11141D;        
+    --secondary-border: #1A2030;    
+    --secondary-txt: #8A9AAA;       
 
-    --secondary-hover-bg: #161B26;  
-    --secondary-hover-border: #1E293B;
-    --secondary-hover-txt: #E8F2FA;
+    --secondary-hover-bg: #161C28;  
+    --secondary-hover-border: #283848;
+    --secondary-hover-txt: #F8FAFC;
 
-    --secondary-active-bg: #020408; 
-    --secondary-active-border: #0F172A;
-    --secondary-active-txt: #4A6A80;
+    --secondary-active-bg: #0B0E14; 
+    --secondary-active-border: #3A5068;
+    --secondary-active-txt: #C0D4E4;
 
-    /* checkbox */
-    --box-bg: #0A0C12;
-    --box-border: #1A2A3A;
+    /* Checkbox */
+    --box-bg: #0B0E14;
+    --box-border: #283848;
+    --box-hover-bg: #052040;
+    --box-hover-border: #2E8FE0;
+    --box-checked-bg: #2E8FE0;
+    --box-checked-border: #50A8F0;
 
-    --box-hover-bg: #0A1E38;
-    --box-hover-border: #5A9FD4;
-
-    --box-checked-bg: #5A9FD4;
-    --box-checked-border: #7AB8E8;
-
-    /* theme toggle */
-    --toggle-bg: #0A0F1E;
+    /* Theme Toggle */
+    --toggle-bg: #161C28;
 }

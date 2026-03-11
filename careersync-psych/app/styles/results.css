@@ -25,7 +25,7 @@
 }
 
 .results-card .caption-txt { 
-    color: var(--primary-btn-border) !important; 
+    color: var(--primary-btn-txt) !important; 
     width: 100%;
     text-align: center;
 }
