@@ -136,7 +136,7 @@ export default function Forms() {
                         <h1 className="category-txt">Workflow Mode</h1>
                         <div className="workstyle-card">
                             <span className="question-txt">How do you achieve your peak performance?</span>
-                            <span className="caption-txt" style={{ color: validationMsg ? "var(--danger-btn-border)" : undefined }}>
+                            <span className="caption-txt" style={{ color: validationMsg ? "var(--danger-btn-txt)" : undefined }}>
                                 Choose the work environment where you feel most in the zone
                             </span>
                             <div className="workstyle-btn-grp">
@@ -161,7 +161,7 @@ export default function Forms() {
                         <h1 className="category-txt">Core Domains</h1>
                         <div className="subjects-card">
                             <span className="question-txt">Which Psychology subjects have you mastered or enjoyed most?</span>
-                            <span className="caption-txt" style={{ color: validationMsg ? "var(--danger-btn-border)" : undefined }}>
+                            <span className="caption-txt" style={{ color: validationMsg ? "var(--danger-btn-txt)" : undefined }}>
                                 Select the areas where you feel most confident or find the highest level of interest
                             </span>
                             <div className="subjects-checkbox-grp">
@@ -188,7 +188,7 @@ export default function Forms() {
                         <h1 className="category-txt">Professional DNA</h1>
                         <div className="softskills-card">
                             <span className="question-txt">What is your primary interpersonal strength?</span>
-                            <span className="caption-txt" style={{ color: validationMsg ? "var(--danger-btn-border)" : undefined }}>
+                            <span className="caption-txt" style={{ color: validationMsg ? "var(--danger-btn-txt)" : undefined }}>
                                 Choose the one strength that most defines your contribution to a team or practice
                             </span>
                             <div className="softskills-btn-grp">
@@ -214,7 +214,7 @@ export default function Forms() {
                         <h1 className="category-txt">Side Quests</h1>
                         <div className="hobbies-card">
                             <span className="question-txt">Where does your curiosity wander off-academics?</span>
-                            <span className="caption-txt" style={{ color: validationMsg ? "var(--danger-btn-border)" : undefined }}>
+                            <span className="caption-txt" style={{ color: validationMsg ? "var(--danger-btn-txt)" : undefined }}>
                                 Select activities that fuel your creative energy
                             </span>
                             <div className="hobbies-checkbox-grp">

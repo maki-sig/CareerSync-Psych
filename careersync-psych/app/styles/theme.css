@@ -1,6 +1,7 @@
-/* THEME: POLARIS
-   Light Mode: Unified Selection & Primary
-   Dark Mode: Independent Azure Primary & Cyan Selection
+/* THEME: POLARIS 
+   Light Mode: Unified Selection & Primary (Blue)
+   Dark Mode: Independent Primary & Enhanced Transparent Selection
+   Note: Danger contrast boosted for high visibility
 */
 
 :root,
@@ -21,15 +22,15 @@
     --select-hover-border: #CBD5E1;
     --select-hover-txt: #1E293B;
 
-    --selected-bg: #EFF8FF;
-    --selected-border: #2E8FE0;
-    --selected-txt: #1068B8;
+    --selected-bg: #EFF6FF; 
+    --selected-border: #3B82F6;
+    --selected-txt: #1D4ED8;
 
-    --selected-hover-bg: #D8EFFE;
-    --selected-hover-border: #1477CC;
-    --selected-hover-txt: #084D8A;
+    --selected-hover-bg: #DBEAFE;
+    --selected-hover-border: #2563EB;
+    --selected-hover-txt: #1E40AF;
 
-    /* Primary Button - Inheriting from Selected (Light Mode Only) */
+    /* Primary Button - Inheriting from Selected */
     --primary-btn-bg: var(--selected-bg); 
     --primary-btn-border: var(--selected-border); 
     --primary-btn-txt: var(--selected-txt);
@@ -38,21 +39,21 @@
     --primary-hover-border: var(--selected-hover-border);
     --primary-hover-txt: var(--selected-hover-txt);
 
-    --primary-active-bg: #B8DFFB;
-    --primary-active-border: #55A0E0;
-    --primary-active-txt: #084D8A;
+    --primary-active-bg: #BFDBFE;
+    --primary-active-border: #60A5FA;
+    --primary-active-txt: #172554;
 
-    /* Danger - Pastel Rose */
+    /* Danger - Vibrant Pastel (Boosted Border) */
     --danger-btn-bg: #FFF1F2;
-    --danger-btn-border: #FECDD3;
+    --danger-btn-border: #FDA4AF;   /* Increased contrast from FECDD3 */
     --danger-btn-txt: #E11D48;
 
     --danger-hover-bg: #FFE4E6;
-    --danger-hover-border: #FDA4AF;
+    --danger-hover-border: #FB7185; /* Increased contrast from FDA4AF */
     --danger-hover-txt: #BE123C;
 
     --danger-active-bg: #FECDD3;
-    --danger-active-border: #FB7185;
+    --danger-active-border: #F43F5E;
     --danger-active-txt: #9F1239;
 
     /* Secondary - Neutrals */
@@ -71,50 +72,50 @@
     /* Checkbox */
     --box-bg: #FFFFFF;
     --box-border: #CBD5E1;
-    --box-hover-bg: #EFF8FF;
-    --box-hover-border: #2E8FE0;
-    --box-checked-bg: #2E8FE0;
-    --box-checked-border: #1477CC;
+    --box-hover-bg: #EFF6FF;
+    --box-hover-border: #3B82F6;
+    --box-checked-bg: #2563EB;
+    --box-checked-border: #1D4ED8;
 
     /* Theme Toggle */
     --toggle-bg: #E2E8F0;
 }
 
 [data-theme="dark"] {
-    /* Base Surface - Deeper Obsidian */
+    /* Base Surface */
     --main-bg: #0B0E14;       
     --card-bg: #11141D;       
     --card-border: #1A2030;   
     --text-main: #F8FAFC;     
     --text-sub: #8A9AAA;
 
-    /* Primary - True Azure Blue (Independent) */
-    --primary-btn-bg: #052040; 
-    --primary-btn-border: #1477CC; 
-    --primary-btn-txt: #C8E6FA;
+    /* Primary - Independent Blue */
+    --primary-btn-bg: #101B35;     
+    --primary-btn-border: #2563EB; 
+    --primary-btn-txt: #BFDBFE;
 
-    --primary-hover-bg: #083060;
-    --primary-hover-border: #2E8FE0;
-    --primary-hover-txt: #E8F4FF;
+    --primary-hover-bg: #1E3A8A;
+    --primary-hover-border: #3B82F6;
+    --primary-hover-txt: #FFFFFF;
 
-    --primary-active-bg: #031428;
-    --primary-active-border: #0D60AA;
-    --primary-active-txt: #9ACEF5;
+    --primary-active-bg: #0F172A;
+    --primary-active-border: #1D4ED8;
+    --primary-active-txt: #93C5FD;
 
-    /* Danger - Muted Rose */
+    /* Danger - Vibrant Muted Rose (High Contrast Border) */
     --danger-btn-bg: #450A0A;
-    --danger-btn-border: #991B1B;
+    --danger-btn-border: #DC2626;   /* Swapped #991B1B for vibrant red */
     --danger-btn-txt: #FECDD3;
 
     --danger-hover-bg: #7F1D1D;
-    --danger-hover-border: #B91C1C;
+    --danger-hover-border: #EF4444; /* High glow border */
     --danger-hover-txt: #FFF1F2;
 
     --danger-active-bg: #991B1B;
-    --danger-active-border: #F43F5E;
+    --danger-active-border: #F87171;
     --danger-active-txt: #FFFFFF;
 
-    /* Selection Radio/Cards (Independent Cyan Style) */
+    /* Selection Radio/Cards - Deep Transparent Blue */
     --select-bg: #11141D;
     --select-border: #1A2030;
     --select-txt: #8A9AAA;
@@ -123,12 +124,12 @@
     --select-hover-border: #283848;
     --select-hover-txt: #F1F5F9;
 
-    --selected-bg: #052040;
-    --selected-border: #2E8FE0;
-    --selected-txt: #C8E6FA;
+    --selected-bg: #141D32;       
+    --selected-border: #3B82F6;
+    --selected-txt: #DBEAFE;
 
-    --selected-hover-bg: #083060;
-    --selected-hover-border: #50A8F0;
+    --selected-hover-bg: #172445;
+    --selected-hover-border: #60A5FA;
     --selected-hover-txt: #FFFFFF;
     
     /* Secondary - Muted Slate */
@@ -147,10 +148,10 @@
     /* Checkbox */
     --box-bg: #0B0E14;
     --box-border: #283848;
-    --box-hover-bg: #052040;
-    --box-hover-border: #2E8FE0;
-    --box-checked-bg: #2E8FE0;
-    --box-checked-border: #50A8F0;
+    --box-hover-bg: #101B35;
+    --box-hover-border: #3B82F6;
+    --box-checked-bg: #2563EB;
+    --box-checked-border: #60A5FA;
 
     /* Theme Toggle */
     --toggle-bg: #161C28;
